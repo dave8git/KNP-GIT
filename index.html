@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Papier - Kamien - Nozyce</title>
+    <link rel="stylesheet" href="sass\style.css">
+    
+</head>
+<body>
+    <div>
+        <button id="rounds-button">Nowa Gra</button>
+    </div>
+    
+    <div class="padding-out">
+        <button data-move="1" id="paper-button" class="player-move">Papier</button>
+    </div>
+    
+    <div class="padding-out">
+        <button data-move="2" id="rock-button" class="player-move">Kamień</button>
+    </div>
+    
+    <div class="padding-out">
+        <button data-move="3" id="scissors-button" class="player-move">Nożyce</button>
+    </div>
+    <div id="score"></div>
+    <div class="overlay" id="modal-overlay">
+        <div class="modal" id="modal-one">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Nie masz więcej rund! Kliknij 'Nowa Gra'</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-two">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Remis!</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-three">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Papier obwija kamień. Wygrywasz!</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-four">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Nożyce tną papier. Niestety przegrywasz :(</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-five">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Papier obwija kamień. Niestety przegrywasz :(</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-six">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Nożyce strzępią sie o kamień. Wygrywasz!</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-seven">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Nożyce tną papier. Wygrywasz!</p>
+            </div>
+        </div>
+        <div class="modal" id="modal-eight">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Nożyce strzępią się o kamień. Przegrywasz :(</p>
+            </div>
+        </div>
+        <div class="modal result" id="modal-nine">
+            <a href="#" class="close">x</a>
+            <header>Info</header>
+            <div class="content">
+                <p>Wyniki gry:</p>
+                <table class='table' border=1>
+                    <tr><th colspan='2'>Wyniki rozgrywki</th></tr>
+                    <tr><th>Użytkownik</th><th>Komputer</th></tr>
+                </table>
+                <table class='table2'>
+                    
+                </table>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
